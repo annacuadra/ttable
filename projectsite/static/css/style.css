@@ -27,6 +27,28 @@ h1,h2,h3,h4,h5,h6 {
   font-family: "Jost", sans-serif;
 }
 
+#about h2, #team h2, #contact h2{
+  color: #5ec0b1;
+  font-family: "Jost", sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 30px;
+  font-weight: 700;
+  padding-top: 50px;
+}
+
+#about h2:after, #team h2:after, #contact h2:after{
+  margin-left: auto;
+  margin-right: auto;
+  content: '';
+  display: block;
+  position: relative;
+  width: 10%;
+  border: 2px solid #5ec0b1;
+  margin-top: 8px; 
+}
+
+
 /*--------------------------------------------------------------
 # Preloader
 --------------------------------------------------------------*/
@@ -458,7 +480,7 @@ h1,h2,h3,h4,h5,h6 {
 
 @media (max-width: 991.5px) {
   #hero {
-    height: 100vh;
+    height: auto;
     text-align: center;
   }
 
